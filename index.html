@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment-5</title>
+    <title>bus ticket</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -56,7 +56,7 @@
             <h1 class="mb-5 text-5xl font-bold w-max ">End-to-End Travel with</h1>
             <h1 class="mb-5 text-5xl font-bold text-green-500">P-Ticket</h1>
             <p class="mb-5">Unvaccinated family travel has been greatly affected during the pandemic, with many countries enacting strict regulations.</p>
-            <button id="by-ticket" class="btn bg-green-500 mt-10">Buy Tickets</button>
+            <button  id="by-ticket" class="btn bg-green-500 mt-10"> <a href="#tickets-section">Buy Tickets</a> </button>
             
           </div>
         </div>
@@ -77,37 +77,46 @@
     <section id="best-offers" class="mt-16 ">
     <h1 class="mb-5 text-5xl font-bold  text-center text-black">Best offers for you</h1>
     <!-- offers card container start -->
-    <div class="flex  gap-5 my-10">
+    <div class="lg:flex md:flex sm:grid sm:grid-cols-2  gap-5 my-10 ">
+
+
+
       <!-- 15% off card start -->
       <div class="flex flex-1 justify-between rounded-2xl bg-yellow-500 rounded-2xl">
-        <div class="p-10 ">
+        <div class="lg:p-10 ">
           <h1 id="" class="text-3xl font-bold">15% OFF</h1>
           <p >on your next purchase</p>
           <p class="text-slate-500">use by January 2024</p>
         </div>
         <img class="" src="images/cupon-devider.png" alt="">  
         <div class="p-10 mt-5 mr-5">
-          <h1 class="text-3xl font-bold">NEW 15</h1>
+          <h1 class="text-3xl font-bold" id="new15">NEW 15</h1>
           <p class="text-slate-500">Coupon Code</p>
         </div>
       </div>
       <!-- 15% off card end -->
 
+
+
       <!-- 20% off card start -->
       <div class="flex flex-1 justify-between rounded-2xl bg-pink-400 rounded-2xl">
         <div class="p-10 ">
-          <h1 class="text-3xl font-bold">15% OFF</h1>
+          <h1 class="text-3xl font-bold">20% OFF</h1>
           <p >on your next purchase</p>
           <p class="text-slate-500">use by January 2024</p>
         </div>
         <img class="" src="images/cupon-devider.png" alt="">  
-        <div class="p-10 mt-5 mr-5">
-          <h1 class="text-3xl font-bold">NEW 15</h1>
+        <div class="lg:p-10 mt-5 mr-5">
+          <h1 class="text-3xl font-bold" id="couple20">Couple 20</h1>
           <p class="text-slate-500">Coupon Code</p>
         </div>
       </div>
       <!-- 20% off card end -->
+
     </div>
+
+
+
     <!-- offers card container end -->
     <div class="flex justify-center">
       <button class="btn btn-outline btn-success ">See All offers</button>
@@ -121,9 +130,9 @@
   <!-- P.H Paribahan start -->
   <section id="tickets-section" class="bg-slate-200 border-green-500 border-t-2 rounded-3xl m-20 mt-10 p-28 shadow">
     <h1 class="mb-5 text-5xl font-bold  text-center text-black">Best offers for you</h1>
-      <p class="mb-5 text-center">Unvaccinated family travel has been greatly affected during the pandemic, with many countries enacting strict regulations.</p>
+      <p class="mb-5 text-center">Unvaccinated family travel has been greatly affected during the pandemic, with many countries enacting strict regulations.<span id="Economoy">Economoy</span> </p>
      <!-- main container start -->
-     <div class="flex py-20 bg-white rounded-2xl">
+     <div class="lg:flex py-20 bg-white rounded-2xl">
         
     <!-- GreenLine Paribahan start 1-->
     <div class="pt-20 pl-10 w-3/5">
@@ -138,10 +147,11 @@
           </div>
         </div>
          <div class="navbar-end">
-           <a class="btn text-green-500 border-green-500 border-2 text-2xl"><span>40</span>Seats left <img src="images/seat-green-filled.png" alt=""></a>
+           <a class="btn text-green-500 border-green-500 border-2 text-2xl"><span id="seats-left">40</span>Seats left <img src="images/seat-green-filled.png" alt=""></a>
          </div>
       </div>
       <!-- GreenLine  title end -->
+
               <!-- body -->
       <div>
         <div class="flex justify-between">
@@ -173,7 +183,7 @@
      <!-- 550taka 3-->
      <div class="pt-20 w-1/4">
       <img src="images/fare.png" alt="">
-      <h3 class="text-2xl">550 Taka</h3>
+      <h3 class="text-2xl"><span id="per-price">550</span> Taka</h3>
       <p class="text-slate-500">Per Seat</p>
      </div>
      <!-- 550taka -->
@@ -183,15 +193,15 @@
 
     
         <!-- main containar start -->
-          <div class="flex justify-between rounded-2xl bg-white mt-20 p-20">
+          <div class="lg:flex justify-between rounded-2xl bg-white mt-20 p-20">
  
                  
      <!-- first select your seat start-->  
      <div class="  w-3/5 p-5">
       <div>
-       <h3 class="text-3xl pb-3">Select Your Seat</h3>
+       <h3 class="text-3xl pb-3 sm:collapse">Select Your Seat</h3>
         <!-- Available selected -->
-         <div class="flex justify-between">
+         <div class="lg:  flex justify-between">
           <!--  -->
           <div class=""><img src="images/seat-gray.png"><p class="text-gray-500">Available</p></div>
           <!--  -->
@@ -202,56 +212,56 @@
       </div> 
       <!-- SET PLARNING START -->
         <div class="grid grid-cols-5 gap-1">
-         <div            class="border bg-gray-100 flex justify-center items-center rounded">A </div>
-         <div id="A1" class="border bg-gray-100 flex justify-center items-center rounded">A1</div>
-         <div id="A2" class="border bg-gray-100 flex justify-center items-center rounded">A2</div>
-         <div id="A3" class="border bg-gray-100 flex justify-center items-center rounded">A3</div>
-         <div id="A4" class="border bg-gray-100 flex justify-center items-center rounded">A4</div>
-         <div id      class="border  bg-gray-100 flex justify-center items-center rounded">B </div>
-         <div id="B1" class="border bg-gray-100 flex justify-center items-center rounded">B1</div>
-         <div id="B2" class="border bg-gray-100 flex justify-center items-center rounded">B2</div>
-         <div id="B3" class="border bg-gray-100 flex justify-center items-center rounded">B3</div>
-         <div id="B4" class="border bg-gray-100 flex justify-center items-center rounded">B4</div>
-         <div id      class="border  bg-gray-100 flex justify-center items-center rounded">C </div>
-         <div id="C1" class="border bg-gray-100 flex justify-center items-center rounded">C1</div>
-         <div id="C2" class="border bg-gray-100 flex justify-center items-center rounded">C2</div>
-         <div id="C3" class="border bg-gray-100 flex justify-center items-center rounded">C3</div>
-         <div id="C4" class="border bg-gray-100 flex justify-center items-center rounded">C4</div>
-         <div id      class="border  bg-gray-100 flex justify-center items-center rounded">D </div>
-         <div id="D1" class="border bg-gray-100 flex justify-center items-center rounded">D1</div>
-         <div id="D2" class="border bg-gray-100 flex justify-center items-center rounded">D2</div>
-         <div id="D3" class="border bg-gray-100 flex justify-center items-center rounded">D3</div>
-         <div id="D4" class="border bg-gray-100 flex justify-center items-center rounded">D4</div>
-         <div id      class="border  bg-gray-100 flex justify-center items-center rounded">E </div>
-         <div id="E1" class="border bg-gray-100 flex justify-center items-center rounded">E1</div>
-         <div id="E2" class="border bg-gray-100 flex justify-center items-center rounded">E2</div>
-         <div id="E3" class="border bg-gray-100 flex justify-center items-center rounded">E3</div>
-         <div id="E4" class="border bg-gray-100 flex justify-center items-center rounded">E4</div>
-         <div id      class="border  bg-gray-100 flex justify-center items-center rounded">F </div>
-         <div id="F1" class="border bg-gray-100 flex justify-center items-center rounded">F1</div>
-         <div id="F2" class="border bg-gray-100 flex justify-center items-center rounded">F2</div>
-         <div id="F3" class="border bg-gray-100 flex justify-center items-center rounded">F3</div>
-         <div id="F4" class="border bg-gray-100 flex justify-center items-center rounded">F4</div>
-         <div id      class="border  bg-gray-100 flex justify-center items-center rounded">G </div>
-         <div id="G1" class="border bg-gray-100 flex justify-center items-center rounded">G1</div>
-         <div id="G2" class="border bg-gray-100 flex justify-center items-center rounded">G2</div>
-         <div id="G3" class="border bg-gray-100 flex justify-center items-center rounded">G3</div>
-         <div id="G4" class="border bg-gray-100 flex justify-center items-center rounded">G4</div>
-         <div id      class="border  bg-gray-100 flex justify-center items-center rounded">H </div>
-         <div id="H1" class="border bg-gray-100 flex justify-center items-center rounded">H1</div>
-         <div id="H2" class="border bg-gray-100 flex justify-center items-center rounded">H2</div>
-         <div id="H3" class="border bg-gray-100 flex justify-center items-center rounded">H3</div>
-         <div id="H4" class="border bg-gray-100 flex justify-center items-center rounded">H4</div>
-         <div id      class="border  bg-gray-100 flex justify-center items-center rounded">I </div>
-         <div id="I1" class="border bg-gray-100 flex justify-center items-center rounded">I1</div>
-         <div id="I2" class="border bg-gray-100 flex justify-center items-center rounded">I2</div>
-         <div id="I3" class="border bg-gray-100 flex justify-center items-center rounded">I3</div>
-         <div id="I4" class="border bg-gray-100 flex justify-center items-center rounded">I4</div>
-         <div id      class="border  bg-gray-100 flex justify-center items-center rounded">J </div>
-         <div id="J1" class="border bg-gray-100 flex justify-center items-center rounded">J1</div>
-         <div id="J2" class="border bg-gray-100 flex justify-center items-center rounded">J2</div>
-         <div id="J3" class="border bg-gray-100 flex justify-center items-center rounded">J3</div>
-         <div id="J4" class="border bg-gray-100 flex justify-center items-center rounded">J4</div>
+         <div                class="border bg-gray-100 flex justify-center items-center rounded">A </div>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">A1</button>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">A2</button>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">A3</button>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">A4</button>
+         <div                class="border bg-gray-100 flex justify-center items-center rounded">B </div>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">B1</button>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">B2</button>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">B3</button>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">B4</button>
+         <div                class="border bg-gray-100 flex justify-center items-center rounded">C </div>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">C1</button>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">C2</button>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">C3</button>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">C4</button>
+         <div                class="border bg-gray-100 flex justify-center items-center rounded">D </div>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">D1</button>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">D2</button>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">D3</button>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">D4</button>
+         <div                class="border bg-gray-100 flex justify-center items-center rounded">E </div>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">E1</button>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">E2</button>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">E3</button>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">E4</button>
+         <div                class="border bg-gray-100 flex justify-center items-center rounded">F </div>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">F1</button>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">F2</button>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">F3</button>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">F4</button>
+         <div                class="border bg-gray-100 flex justify-center items-center rounded">G </div>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">G1</button>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">G2</button>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">G3</button>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">G4</button>
+         <div                class="border bg-gray-100 flex justify-center items-center rounded">H </div>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">H1</button>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">H2</button>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">H3</button>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">H4</button>
+         <div                class="border bg-gray-100 flex justify-center items-center rounded">I </div>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">I1</button>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">I2</button>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">I3</button>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">I4</button>
+         <div                class="border bg-gray-100 flex justify-center items-center rounded">J </div>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">J1</button>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">J2</button>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">J3</button>
+         <button class="btn" class="border bg-gray-100 flex justify-center items-center rounded">J4</button>
       
         
         </div>
@@ -265,24 +275,42 @@
      <div class=" p-5 w-2/5 ">
        <h2 class="text-3xl"> Selected Your Seat</h2>
        <hr>
-       <div class="mt-2 flex justify-between"><p class="font-bold">Seat</p> <p class="font-bold">Class</p> <p class="font-bold">Price</p></div>
-       <div class="mt-2 flex justify-between text-gray-500"><p id="seat-information-1">c1</p> <p>Economoy</p> <p>550</p></div>
-       <div class="mt-2 flex justify-between text-gray-500"><p id="seat-information-2">c2</p> <p>Economoy</p> <p>550</p></div>
-       <div class="mt-2 flex justify-between text-gray-500"><p id="seat-information-3">c3</p> <p>Economoy</p> <p>550</p></div>
-       <div class="mt-2 flex justify-between text-gray-500"><p id="seat-information-4">c4</p> <p>Economoy</p> <p>550</p></div>
-       <hr class="bmt-2 order-black">
-       <div class="mt-2 flex justify-between"><p>Total Price</p>  <p>BDT<span>2200</span></p></div>
-       <div class="mt-2 flex justify-between"><input type="text" placeholder="Have Any Copupon?"><button class="btn bg-green-500">Apply</button></div>
-       <div class="mt-2 flex justify-between"><p>Grand Price</p>  <p>BDT<span>2200</span></p></div>
+       <div class="mt-2 flex justify-between"><p class="font-bold">Seat <span id="select-seat" class="text-green-500">0</span></p> <p class="font-bold">Class</p> <p class="font-bold">Price</p></div>
+       
+       <div id="container" class="">
+       
 
-       <label for="name">Passenger Name:</label> 
-       <input type="text" placeholder="enter your name"> <br>
 
-       <label for="Number"> Number:</label> 
-       <input type="phone" placeholder="enter your phone number"> <br>
+       </div>
+       
+       
 
-       <label for="Email">Email:</label> 
-       <input type="email" placeholder="enter your email"> <br>
+
+        <hr class="bmt-2 order-black">
+        <div class="mt-2 flex justify-between"><p>Total Price</p>  <p>BDT: <span id="total-price">000</span></p></div>
+       
+
+        
+
+
+          <div  class="mt-2 flex justify-between"><input placeholder="Have Any Coupon?" id="coupon-code" type="text" ><button onclick="updateGrandPrice(`apply-btn`)"  class="btn bg-green-500" id="apply-btn">Apply</button></div>
+          <div class="mt-2 flex justify-between"><p>Grand Price</p>  <p>BDT: <span id="grand-price">000</span></p></div>
+   
+          <label for="name">Passenger Name:</label> 
+          <input id="passenger" type="text" placeholder="enter your name"> <br>
+   
+          <label for="Number"> Number:</label> 
+          <input id="phone" type="phone" placeholder="enter your phone number"> <br>
+   
+          <label for="Email">Email:</label> 
+          <input  id="email" placeholder="enter your email"> <br>
+
+
+
+        
+
+
+       
        
      </div>
      <!-- second select your seat end--> 
@@ -365,6 +393,6 @@
    
 
 
-
+<script src="style.js"></script>
 </body>
 </html>
